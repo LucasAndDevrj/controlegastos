@@ -95,6 +95,13 @@ renderizar();
   document.getElementById("valor").value = "";
 }
 
+document.getElementById("valor")
+  .addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+      adicionarGasto();
+    }
+  });
+
 // gráfico pizza
 function atualizarGrafico() {
   let canvas = document.getElementById("grafico");

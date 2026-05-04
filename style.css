@@ -11,21 +11,21 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  border: none;
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
 }
 
 button {
-  padding: 10px;
-  background: #22c55e;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 100%;
+  padding: 12px;
 }
 
 li {
@@ -33,4 +33,29 @@ li {
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  font-size: 16px;
+}
+
+.input-area button {
+  white-space: nowrap;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 600px) {
+  .input-area {
+    flex-direction: column;
+  }
 }
