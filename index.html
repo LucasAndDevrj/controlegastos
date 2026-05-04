@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Gastos</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- biblioteca -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>💰 Controle de Gastos</h1>
+
+    <div class="input-area">
+      <input type="text" id="descricao" placeholder="Descrição">
+      <input type="number" id="valor" placeholder="Valor">
+      <button onclick="adicionarGasto()">Adicionar</button>
+    </div>
+
+    <h2>Total: R$ <span id="total">0.00</span></h2>
+    <p>Entradas: R$ <span id="entrada">0</span></p>
+    <p>Saídas: R$ <span id="saida">0</span></p>
+    <h2>Saldo: R$ <span id="saldo">0</span></h2>
+
+    <ul id="lista"></ul>
+
+    <!-- gráfico -->
+    <canvas id="grafico" width="400" height="200"></canvas>
+  </div>
+
+  <!-- SEU JS -->
+  <script src="app.js"></script>
+
+</body>
+</html>
